@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title
+  body
+    form(name='memo', method='post', action='/insert', accept-charset='utf-8')
+      | name
+      input(type='text', name='username')
+
+      br
+      |         message
+      input(type='text', name='memo')
+
+      button(type='submit') Submit
+
+    a(href='http://localhost:3000/check') check
